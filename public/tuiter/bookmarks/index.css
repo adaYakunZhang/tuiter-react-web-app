@@ -41,6 +41,7 @@ body {
     margin-left: 16px;
     margin-bottom: 12px;
     border-bottom: lightgray solid 1px;
+    overflow: hidden;
 }
 
 
@@ -119,6 +120,7 @@ body {
     margin-top: 12px;
     color: lightgray;
     font-size: 12px;
+    margin-bottom: 12px;
 }
 
 .wd-numbers {
