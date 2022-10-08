@@ -1,60 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
           rel="stylesheet"/>
-    <link href="index.css" rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
 </head>
-<body>
-<div class="container pt-2">
-    <div class="row">
+<body class="bg-black">
+<div class="container bg-black text-light pt-2 px-4">
+    <div class="row gx-5">
         <div class="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2">
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fab fa-twitter"></i></a>
+                    <i class="fa-solid fa-t"></i></i></a>
                 <a href="#" class="list-group-item list-group-item-action d-inline-flex justify-content-start">
-                    <i class="fas fa-home mt-1"></i>
-                    <span class="d-none d-xl-block ms-1">Home</span></a>
+                    <i class="fa-solid fa-house-user mt-1"></i>
+                    <span class="d-none d-xl-block ms-3">Home</span></a>
                 <a href="#" class="list-group-item list-group-item-action active d-inline-flex justify-content-start">
                     <i class="fas fa-hashtag mt-1"></i>
-                    <span class="d-none d-xl-block ms-1">Explore</span></a>
+                    <span class="d-none d-xl-block ms-3">Explore</span></a>
                 <a href="#" class="list-group-item list-group-item-action d-inline-flex justify-content-start">
-                    <i class="fas fa-bell mt-1"></i>
-                    <span class="d-none d-xl-block ms-1">Notifications</span></a>
+                    <i class="fa-regular fa-bell mt-1"></i>
+                    <span class="d-none d-xl-block ms-3">Notifications</span></a>
                 <a href="#" class="list-group-item list-group-item-action d-inline-flex justify-content-start">
-                    <i class="fas fa-envelope mt-1"></i>
-                    <span class="d-none d-xl-block ms-1">Messages</span></a>
+                    <i class="fa-regular fa-envelope mt-1"></i>
+                    <span class="d-none d-xl-block ms-3">Messages</span></a>
                 <a href="#" class="list-group-item list-group-item-action d-inline-flex justify-content-start">
-                    <i class="fas fa-bookmark mt-1"></i>
-                    <span class="d-none d-xl-block ms-1">Bookmarks</span></a>
+                    <i class="fa-regular fa-bookmark mt-1"></i>
+                    <span class="d-none d-xl-block ms-3">Bookmarks</span></a>
                 <a href="#" class="list-group-item list-group-item-action d-inline-flex justify-content-start">
                     <i class="fas fa-list mt-1"></i>
-                    <span class="d-none d-xl-block ms-1">Lists</span></a>
+                    <span class="d-none d-xl-block ms-3">Lists</span></a>
                 <a href="#" class="list-group-item list-group-item-action d-inline-flex justify-content-start">
-                    <i class="fas fa-user mt-1"></i>
-                    <span class="d-none d-xl-block ms-1">Profile</span></a>
+                    <i class="fa-regular fa-user mt-1"></i>
+                    <span class="d-none d-xl-block ms-3">Profile</span></a>
                 <a href="#" class="list-group-item list-group-item-action d-inline-flex justify-content-start">
                     <i class="fas fa-ellipsis-h mt-1"></i>
-                    <span class="d-none d-xl-block ms-1">More</span></a>
+                    <span class="d-none d-xl-block ms-3">More</span></a>
             </div>
-            <a href="#"><button class="btn btn-primary rounded-pill w-100 mt-2">Tuit</button></a>
+            <a href="#"><button class="btn wd-btn-info text-light fw-bolder rounded-pill w-100 mt-2">Tuit</button></a>
         </div>
-        <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10 col-10 mb-2">
-            <div class="row">
-                <div class="col-11">
-                    <span class="position-absolute zindex-bring-to-front"><i class="fas fa-search"></i></span>
-                    <input class="ps-5 form-control rounded-pill mb-2" placeholder="Search Tuiter" id="search"/>
+        <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10 col-10 mb-2 border border-dark p-0">
+            <div class="d-flex justify-content-between">
+                <div class="col-10 ms-2">
+                    <span class="position-absolute text-secondary zindex-bring-to-front"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input class="ps-5 form-control bg-dark text-secondary border-0 rounded-pill mt-2 mb-2" placeholder="Search Tuiter" id="search"/>
                 </div>
-                <div class="col-1 mt-1 float-end">
-                    <i class="fas fa-cog fa-2x" style="color:#0c63e4"></i>
+                <div class="col-2 mt-3 ms-5">
+                    <i class="fas fa-cog text-light"></i>
                 </div>
             </div>
-            <ul class="nav nav-tabs mb-2">
+            <ul class="nav nav-pills justify-content-between mb-0 mt-2">
                 <li class="nav-item">
-                    <a class="nav-link active" href="for-you.html">For you</a>
+                    <a class="nav-link active border-bottom border-4" href="for-you.html">For you</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="trending.html">Trending</a>
@@ -71,7 +71,7 @@
             </ul>
 
             <div class="position-relative">
-                <img src="../../images/starship.jpg" class="card-img-bottom" width="100%"/>
+                <img src="../../images/starship.jpg" class="border border-secondary" width="100%"/>
                 <h3 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship</h3>
             </div>
 
@@ -84,7 +84,7 @@
                             <div class="fw-bolder">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</div>
                         </div>
                         <div class="col-2">
-                            <img class="float-end img-fluid mb-2" src="../../images/react.jpg" width="100%"/>
+                            <img class="float-end img-fluid rounded mb-2" src="../../images/react2.jpg" width="100%" height="100%"/>
                         </div>
                     </div>
                 </li>
@@ -127,81 +127,81 @@
             </ul>
 
         </div>
-        <div class="col-xl-4 col-lg-4 d-none d-lg-block">
-            <ul class="list-group">
-                <li class="list-group-item fw-bold">Who to follow</li>
-                <li class="list-group-item">
+        <div class="col-xl-4 col-lg-4 d-none d-lg-block mt-2">
+            <ul class="list-group rounded-4">
+                <li class="list-group-item bg-dark fs-4 fw-bold border-0">Who to follow</li>
+                <li class="list-group-item bg-dark border-0">
                     <div class="row">
                         <div class="col-2 pe-0">
                             <img class="rounded-circle " src="../../images/java.jpg" width="100%"/>
                         </div>
                         <div class="col-7 ps-1">
                             <div class="fw-bolder">JavaScript <i class="fas fa-check-circle"></i></div>
-                            <div>@Java</div>
+                            <div class="text-secondary">@Java</div>
                         </div>
                         <div class="col-3 ps-0">
-                            <button class="btn btn-primary rounded-pill mt-2">Follow</button>
+                            <button class="btn btn-light fw-bold rounded-pill mt-2">Follow</button>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item bg-dark border-0">
                     <div class="row">
                         <div class="col-2 pe-0">
                             <img class="rounded-circle img-fluid w-100" src="../../images/relativityspace.jpg" width="100%"/>
                         </div>
                         <div class="col-7 ps-1">
                             <div class="fw-bolder">Relativity Space <i class="fas fa-check-circle"></i></div>
-                            <div>@relativityspace</div>
+                            <div class="text-secondary">@relativityspace</div>
                         </div>
                         <div class="col-3 ps-0">
-                            <button class="btn btn-primary rounded-pill mt-2">Follow</button>
+                            <button class="btn btn-light fw-bold rounded-pill mt-2">Follow</button>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item bg-dark border-0">
                     <div class="row">
                         <div class="col-2 pe-0">
                             <img class="rounded-circle" src="../../images/virgin.jpg" width="100%"/>
                         </div>
                         <div class="col-7 ps-1">
                             <div class="fw-bolder">Virgin Galactic <i class="fas fa-check-circle"></i></div>
-                            <div>@virgingalactic</div>
+                            <div class="text-secondary">@virgingalactic</div>
                         </div>
                         <div class="col-3 ps-0">
-                            <button class="btn btn-primary rounded-pill mt-2">Follow</button>
+                            <button class="btn btn-light fw-bold rounded-pill mt-2">Follow</button>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item bg-dark border-0">
                     <div class="row">
                         <div class="col-2 pe-0">
                             <img class="rounded-circle mt-2" src="../../images/nasa.jpg" width="100%"/>
                         </div>
                         <div class="col-7 ps-1">
                             <div class="fw-bolder">NASA <i class="fas fa-check-circle"></i></div>
-                            <div>@NASA</div>
+                            <div class="text-secondary">@NASA</div>
                         </div>
                         <div class="col-3 ps-0">
-                            <button class="btn btn-primary rounded-pill mt-2">Follow</button>
+                            <button class="btn btn-light fw-bold rounded-pill mt-2">Follow</button>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item bg-dark border-0">
                     <div class="row">
                         <div class="col-2 pe-0">
                             <img class="rounded-circle mw-100" src="../../images/tesla.jpg"/>
                         </div>
                         <div class="col-7 ps-1">
                             <div class="fw-bolder">Tesla <i class="fas fa-check-circle"></i></div>
-                            <div>@Tesla</div>
+                            <div class="text-secondary">@Tesla</div>
                         </div>
                         <div class="col-3 ps-0">
-                            <button class="btn btn-primary rounded-pill mt-2">Follow</button>
+                            <button class="btn btn-light fw-bold rounded-pill mt-2">Follow</button>
                         </div>
                     </div>
                 </li>
+                <a href="#" class="list-group-item bg-dark wd-showmore border-0 ist-group-item-action">Show more</a>
             </ul>
-
         </div>
     </div>
 </div>
