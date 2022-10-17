@@ -33,7 +33,7 @@ const NavigationSidebar = (e) => {
                 <span class="d-none d-xl-block ms-1">More</span></a>              
         </div>
         <div class="d-grid mt-2">
-            <a href="tuit.htlml" class="btn btn-primary btn-block rounded-pill">Tuit</a>
+            <a href="tuit.htlml" class="btn btn-primary btn-block rounded-pill d-none d-md-block">Tuit</a>
         </div>
     `)
 }
