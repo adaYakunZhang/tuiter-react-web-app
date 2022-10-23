@@ -22,7 +22,7 @@ const HomePostItem = (
         <li className="list-group-item border-bottom border-0">
             <div className="row">
                 <div className="col-2 pe-0">
-                    <img className="rounded-circle" src={homepost.avatar} width="100%"/>
+                    <img className="rounded-circle" src={homepost.avatar} width="100%" alt="..."/>
                 </div>
                 <div className="col-10">
                     <div className="d-flex justify-content-between">

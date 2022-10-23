@@ -17,13 +17,9 @@ const PostSummaryItem = (
                     <div className="text-secondary">{post.topic}</div>
                     <div className="fw-bolder">{post.userName} <i className="bi bi-check-circle-fill"></i> <span className="fw-normal text-secondary">- {post.time}</span></div>
                     <div className="fw-bolder">{post.title}</div>
-                    {/*<div className="text-secondary">${post.tweets}</div>
-                    <div>{post.userName} . {post.time}</div>
-                    <div className="fw-bolder">{post.topic}</div>
-                    <div>{post.title}</div>*/}
                 </div>
                 <div className="col-2">
-                    <img width={70} className="float-end rounded-3" src={post.image}/>
+                    <img width={70} className="float-end rounded-3" src={post.image} alt="..."/>
                 </div>
             </div>
         </li>

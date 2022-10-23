@@ -1,4 +1,4 @@
-import Nav from "../nav";
+
 import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import ExploreComponent from "./explore";

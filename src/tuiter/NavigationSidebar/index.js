@@ -25,36 +25,36 @@ const NavigationSidebar = () => {
                 <i className="bi bi-hash me-1"></i>
                 <span className="d-none d-xl-block">Explore</span>
             </Link>
-            <a className={`list-group-item d-inline-flex justify-content-start
+            <Link to="#" className={`list-group-item d-inline-flex justify-content-start
                     ${active === 'notifications'?'active':''}`}>
                 <i className="bi bi-bell-fill me-1"></i>
                 <span className="d-none d-xl-block">Notifications</span>
-            </a>
-            <a className={`list-group-item d-inline-flex justify-content-start
+            </Link>
+            <Link to="#" className={`list-group-item d-inline-flex justify-content-start
                     ${active === 'messages'?'active':''}`}>
                 <i className="bi bi-envelope-fill me-1"></i>
                 <span className="d-none d-xl-block">Messages</span>
-            </a>
-            <a className={`list-group-item d-inline-flex justify-content-start
+            </Link>
+            <Link to="#" className={`list-group-item d-inline-flex justify-content-start
                     ${active === 'bookmarks'?'active':''}`}>
                 <i className="bi bi-bookmark-fill me-1"></i>
                 <span className="d-none d-xl-block">Bookmarks</span>
-            </a>
-            <a className={`list-group-item d-inline-flex justify-content-start
+            </Link>
+            <Link to="#" className={`list-group-item d-inline-flex justify-content-start
                     ${active === 'lists'?'active':''}`}>
                 <i className="bi bi-list-ul me-1"></i>
                 <span className="d-none d-xl-block">Lists</span>
-            </a>
-            <a className={`list-group-item d-inline-flex justify-content-start
+            </Link>
+            <Link to="#" className={`list-group-item d-inline-flex justify-content-start
                     ${active === 'profile'?'active':''}`}>
                 <i className="bi bi-person-fill me-1"></i>
                 <span className="d-none d-xl-block">Profile</span>
-            </a>
-            <a className={`list-group-item d-inline-flex justify-content-start
+            </Link>
+            <Link to="#" className={`list-group-item d-inline-flex justify-content-start
                     ${active === 'more'?'active':''}`}>
                 <i className="bi bi-three-dots me-1"></i>
                 <span className="d-none d-xl-block">More</span>
-            </a>
+            </Link>
         </div>
     );
 };
