@@ -4,7 +4,7 @@ import {useLocation} from "react-router";
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
-    const active = paths[2];
+    const active = paths.length === 3 ? paths[2] : 'home';
     return(
         <div className="list-group">
             <Link to="/" className="list-group-item d-inline-flex justify-content-start">
@@ -16,12 +16,12 @@ const NavigationSidebar = () => {
                 <span className="d-none d-xl-block">Tuiter</span>
             </a>
             <Link to="/tuiter/home" className={`list-group-item d-inline-flex justify-content-start
-                           ${paths[2] === 'home' ? 'active' : ''}`}>
+                           ${active === 'home' ? 'active' : ''}`}>
                 <i className="bi bi-house-door-fill me-1"></i>
                 <span className="d-none d-xl-block">Home</span>
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item d-inline-flex justify-content-start
-                    ${paths[2] === 'explore'?'active':''}`}>
+                    ${active === 'explore'?'active':''}`}>
                 <i className="bi bi-hash me-1"></i>
                 <span className="d-none d-xl-block">Explore</span>
             </Link>
@@ -45,8 +45,8 @@ const NavigationSidebar = () => {
                 <i className="bi bi-list-ul me-1"></i>
                 <span className="d-none d-xl-block">Lists</span>
             </Link>
-            <Link to="#" className={`list-group-item d-inline-flex justify-content-start
-                    ${active === 'profile'?'active':''}`}>
+            <Link to="/tuiter/profile" className={`list-group-item d-inline-flex justify-content-start
+                    ${(active === 'profile' || active === 'edit-profile') ?'active':''}`}>
                 <i className="bi bi-person-fill me-1"></i>
                 <span className="d-none d-xl-block">Profile</span>
             </Link>
