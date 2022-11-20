@@ -1,13 +1,15 @@
 import React, {useState} from "react";
-import {createTuit} from "../reducers/tuits-reducer";
+import {createTuitThunk} from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
-        const newTuit = {tuit: whatsHappening}
-        dispatch(createTuit(newTuit));
+        const newTuit = {
+            tuit: whatsHappening,
+        }
+        dispatch(createTuitThunk(newTuit));
     }
     return (
         <div className="row">
