@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
-import {createTuitThunk, deleteTuitThunk, findAllTuitsThunk} from "./tuiter/node-lecture/tuits-thunks";
+import {createTuitThunk, deleteTuitThunk, findAllTuitsThunk} from "./tuits-thunks";
 
 const TuitList = () => {
     const [tuitText, setTuitTex] = useState('')
@@ -8,7 +8,7 @@ const TuitList = () => {
     const dispatch = useDispatch()
     const likeTuit = (tuit) => {
         tuit['liked'] = true
-        tui['likes'] = typeof tuit.likes ==='undefined' ? 1 : tuit.likes + 1
+        tuit['likes'] = typeof tuit.likes ==='undefined' ? 1 : tuit.likes + 1
     }
     useEffect(() => {
         dispatch(findAllTuitsThunk())
