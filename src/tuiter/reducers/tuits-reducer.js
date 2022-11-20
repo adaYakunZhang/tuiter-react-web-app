@@ -3,7 +3,7 @@ import tuits from "../data/tuits.json";
 import {updateTuitThunk, createTuitThunk, deleteTuitThunk, findTuitsThunk} from "../../services/tuits-thunks";
 
 const currentUser = {
-    "userName": "NASA",
+    "username": "NASA",
     "handle": "@nasa",
     "image": "../../images/nasa.jpg"
 };

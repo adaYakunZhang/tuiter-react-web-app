@@ -33,7 +33,7 @@ const TuitItem = (
                 </div>
                 <div className="col-10">
                     <div className="d-flex justify-content-between">
-                        <div className="fw-bolder">{tuit.userName}<i className="bi bi-check-circle-fill text-primary ms-2 me-1"></i><span
+                        <div className="fw-bolder">{tuit.username}<i className="bi bi-check-circle-fill text-primary ms-2 me-1"></i><span
                             className="fw-normal text-secondary">  {tuit.handle} • {tuit.time}</span></div>
                         <i className="bi bi-x-lg float-end"
                            onClick={() => deleteTuitHandler(tuit._id)}></i>
