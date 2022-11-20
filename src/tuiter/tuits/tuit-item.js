@@ -45,5 +45,4 @@ const TuitItem = (
         </li>
     );
 }
-// some comments try again again
 export default TuitItem;
